@@ -1,0 +1,17 @@
+
+/*  google font */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+*{
+    font-family: "Lexend", sans-serif;
+}
+
+
+
+#dontaion__cards .card__1{
+    
+}
+
+#total__donation{
+    background: rgba(17, 17, 17, 0.05);
+}
