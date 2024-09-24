@@ -7,6 +7,8 @@ let blogBtn = document.getElementById('nab_btn');
 let donationCards = idFunction('dontaion__cards');
 let historySection = idFunction('history__details');
 
+let modal = document.getElementById('my_modal_5');
+
 let mainBalance = parseFloat(document.getElementById('balance').innerText);
 
 
@@ -68,7 +70,7 @@ donationBtn.addEventListener('click', function(){
 // ! card -1 section 
 let donateBtnFirst = idFunction('donate_btn_1');
     
-let modal = document.getElementById('my_modal_5');
+
 
 donateBtnFirst.addEventListener('click', function(){
 
@@ -132,7 +134,7 @@ historyCardOne.innerHTML =
 
 let donateBtnSecond = idFunction('donate_btn_2');
 
-let nowMainBalance = document.getElementById('balance').innerText;
+
  
 
 
@@ -142,12 +144,12 @@ let nowMainBalance = document.getElementById('balance').innerText;
 donateBtnSecond.addEventListener('click', function(){
 
     let dontateSecondInput = getInputValue('amount_2');
-  
+    let nowMainBalance = document.getElementById('balance').innerText;
 
     if(dontateSecondInput >= 0  && isNaN(dontateSecondInput) == false &&  dontateSecondInput < mainBalance){
 
 
-    
+        modal.showModal();
      
  let newDonateAmount =    document.getElementById('donate_amount_2').innerText = dontateSecondInput ;
 
@@ -215,6 +217,7 @@ donateBtnThird.addEventListener('click', function(){
 
     if(donatethirdInput >= 0 && isNaN(donatethirdInput) == false && donatethirdInput < mainBalance){
          
+        modal.showModal();
  let newDonateAmount =    document.getElementById('donate_amount_3').innerText = donatethirdInput ;
 
  let newMainBalance = nowMainBalance - newDonateAmount;

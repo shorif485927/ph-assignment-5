@@ -18,19 +18,19 @@
 
     <!-- nav section  -->
 
-    <nav class="bg-[#F9F7F3]  capitalize" id="navbar">
+    <nav class="bg-[#F9F7F3] pb-5 md:pb-0  capitalize" id="navbar">
 
          <div class="container w-4/5 mx-auto md:flex  justify-between">
               <div class=" flex md:justify-center items-center">
-                <button id="nab_btn" class="px-8 py-4 bg-[#B4F461] rounded-md text-xl capitalize font-semibold">blog</button>
+                <button id="nab_btn" class="px-4 md:px-7 py-2 my-3  bg-[#B4F461] rounded-md text-xl capitalize font-semibold">blog</button>
               </div>
                <div class="donate_logo flex  items-center">
-                 <img src="./assets/logo.png" alt="">
-                 <h6 class="capitalize ml-5 text-xl font-semibold my-14 md:my-00">donate bangladesh</h6>
+                 <img src="./assets/logo.png" alt="" class="w-10">
+                 <h6 class="capitalize ml-5 text-xl font-semibold my-8 md:my-14 md:my-00">donate bangladesh</h6>
                </div>
                 <div class="balance_card flex  items-center">
                       <img src="./assets/coin.png" alt="">
-                    <div class="flex justify-center items-center ml-2">
+                    <div class="flex justify-center items-center ml-2 ">
                         <div id="balance" class="mr-3 text-xl  text-[#111111B3] ">30000</div>
                         <div>BDT</div>
                     </div>
@@ -162,10 +162,12 @@
 
     <!-- Open the modal using ID.showModal() method -->
 <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
-<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-  <div class="modal-box">
-    <h3 class="text-lg font-bold">Hello!</h3>
-    <p class="py-4">Press ESC key or click the button below to close</p>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle ">
+  <div class="modal-box text-center w-4/5 md:w-full mx-auto">
+    <h3 class="text-3xl font-bold capitalize">congrats!</h3>
+    <img src="./assets/coin.png" alt="" class="my-3 mx-auto">
+    <p class="py-4 capitalize">you have donated for human kind</p>
+    <h3 class="text-3xl font-bold capitalize">succesfully</h3>
     <div class="modal-action">
       <form method="dialog">
         <!-- if there is a button in form, it will close the modal -->
