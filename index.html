@@ -18,7 +18,7 @@
 
     <!-- nav section  -->
 
-    <nav class="bg-[#F9F7F3] py-3  " id="navbar">
+    <nav class="bg-[#F9F7F3]  capitalize" id="navbar">
 
          <div class="container w-4/5 mx-auto md:flex  justify-between">
               <div class=" flex md:justify-center items-center">
@@ -30,7 +30,10 @@
                </div>
                 <div class="balance_card flex  items-center">
                       <img src="./assets/coin.png" alt="">
-                      <div id="balance" class="ml-3 text-xl  text-[#111111B3]">5500 BDT</div>
+                    <div class="flex justify-center items-center ml-2">
+                        <div id="balance" class="mr-3 text-xl  text-[#111111B3] ">30000</div>
+                        <div>BDT</div>
+                    </div>
 
                 </div>
 
@@ -47,12 +50,12 @@
                   </div>
 
                   <div class="ml-6" >
-                    <button class="px-10 py-4  rounded-md text-md capitalize  border-2 text-[#111111B3]"  id="history_btn">history</button>
+                    <button class="px-10 py-4  rounded-md text-md capitalize  border-2 text-[#111111B3]"  id="history_btn">History</button>
                   </div>
             
             </div>
 
-            <section id="dontaion__cards">
+            <section id="dontaion__cards" class="">
 
                                     <!-- ! card 1-->
                     <div class="card__1 grid grid-cols-1 mb-7 md:grid-cols-2 border p-8 rounded-2xl">
@@ -61,19 +64,24 @@
                             </div>
                             <div class="card_details">
 
-                                <div class=" flex  items-center w-[150px] p-3 rounded-md  my-5 md:my-0" id="total__donation">
+                                <div class=" flex  items-center w-[250px] p-3 rounded-md  my-5 md:my-0" id="total__donation">
                                     <img src="./assets/coin.png" alt="">
-                                    <div id="total_dontaion_balance" class="ml-6 text-xl  text-[#111111B3]">0 BDT</div>
+                                 
+
+                                    <div class="flex justify-center items-center ml-2">
+                                        <div id="donate_amount_1" class="mr-3 text-xl  text-[#111111B3] ">0</div>
+                                        <div>BDT</div>
+                                    </div>
               
                               </div>
                                  <h6 class="my-4 font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h6>
                                  <P class="text-base text-[#111111B3]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</P>
 
                                 <!--  donation amount -->
-                                    <input type="text" id="dontion__amount" placeholder="write dontaion  amount " class=" w-full border text-base p-4 rounded-lg  my-4 ">
+                                    <input type="text" id="amount_1" placeholder="write dontaion  amount " class=" w-full border text-base p-4 rounded-lg  my-4 ">
 
                                     <!--  -->
-                                    <div class="" id="donate_btn">
+                                    <div class="" id="donate_btn_1">
                                         <button  class="w-full px-10 py-3 bg-[#B4F461] rounded-md text-md capitalize font-semibold">donate now</button>
                                       </div>
 
@@ -81,7 +89,8 @@
                     </div>
 
                     <!-- ! card-2 -->
-                    <div class="card__1 grid grid-cols-1 mb-7 md:grid-cols-2 border p-8 rounded-2xl">
+
+                    <div class="card__2 grid grid-cols-1 mb-7 md:grid-cols-2 border p-8 rounded-2xl">
                         <div class="card_img">
                              <img src="./assets/feni.png" alt="" class="w-[90%] h-full">
                         </div>
@@ -89,17 +98,16 @@
 
                             <div class=" flex  items-center w-[150px] p-3 rounded-md  my-5 md:my-0" id="total__donation">
                                 <img src="./assets/coin.png" alt="">
-                                <div id="total_dontaion_balance" class="ml-6 text-xl  text-[#111111B3]">0 BDT</div>
+                                <div id="donate_amount_2" class="ml-6 text-xl  text-[#111111B3]">0 BDT</div>
           
                           </div>
                              <h6 class="my-4 font-bold text-xl">Donate for Flood Relief in Feni,Bangladesh</h6>
                              <P class="text-base text-[#111111B3]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</P>
 
-                            <!--  donation amount -->
-                                <input type="text" id="dontion__amount" placeholder="write dontaion  amount " class=" w-full border text-base p-4 rounded-lg  my-4 ">
+              
+                                <input type="text" id="amount_2" placeholder="write donation  amount " class=" w-full border text-base p-4 rounded-lg  my-4 ">
 
-                                <!--  -->
-                                <div class="" id="donate_btn">
+                                <div class="" id="donate_btn_2">
                                     <button  class="w-full px-10 py-3 bg-[#B4F461] rounded-md text-md capitalize font-semibold">donate now</button>
                                   </div>
 
@@ -110,7 +118,7 @@
 
                     <!-- ! card-3  -->
 
-                    <div class="card__1 grid grid-cols-1 mb-7 md:grid-cols-2 border p-8 rounded-2xl">
+                    <div class="card__3 grid grid-cols-1 mb-7 md:grid-cols-2 border p-8 rounded-2xl">
                         <div class="card_img">
                              <img src="./assets/quota-protest.png" alt="" class="w-[90%] h-full">
                         </div>
@@ -118,17 +126,17 @@
 
                             <div class=" flex  items-center w-[150px] p-3 rounded-md  my-5 md:my-0" id="total__donation">
                                 <img src="./assets/coin.png" alt="">
-                                <div id="total_dontaion_balance" class="ml-6 text-xl  text-[#111111B3]">0 BDT</div>
+                                <div id="donate_amount_3" class="ml-6 text-xl  text-[#111111B3]">0 BDT</div>
           
                           </div>
                              <h6 class="my-4 font-bold text-xl">Aid for Injured in the Quota Movement</h6>
                              <P class="text-base text-[#111111B3]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</P>
 
-                            <!--  donation amount -->
-                                <input type="text" id="dontion__amount" placeholder="write dontaion  amount " class=" w-full border text-base p-4 rounded-lg  my-4 ">
+                 
+                                <input type="text" id="amount_3" placeholder="write dontaion  amount " class=" w-full border text-base p-4 rounded-lg  my-4 ">
 
-                                <!--  -->
-                                <div class="" id="donate_btn">
+                     
+                                <div class="" id="donate_btn_3">
                                     <button  class="w-full px-10 py-3 bg-[#B4F461] rounded-md text-md capitalize font-semibold">donate now</button>
                                   </div>
 
@@ -138,6 +146,12 @@
 
 
             </section>
+
+
+            <section id="history__details" class="hidden">
+            
+            </section>
+
            </div>
     </article>
 

@@ -2,12 +2,12 @@
 
     // ! get input value 
 
-    let homeBtn = document.getElementById("home_nab_btn");
+    // let homeBtn = document.getElementById("home_nab_btn");
 
-    homeBtn.addEventListener('click', function(){
-        window.location.href = '/index.html'
+    // homeBtn.addEventListener('click', function(){
+    //     window.location.href = '/index.html'
          
-    })
+    // })
 
 
     function getInputValue(id) {
