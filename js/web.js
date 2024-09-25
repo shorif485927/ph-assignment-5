@@ -13,12 +13,6 @@ let mainBalance = parseFloat(document.getElementById('balance').innerText);
 
 
 
-
-
-
-
-
-
 blogBtn.addEventListener('click', function(){
      window.location.href = '/blog.html'
 })
@@ -76,47 +70,56 @@ donateBtnFirst.addEventListener('click', function(){
 
     let dontateInputOne = getInputValue('amount_1');
 
-
-     if(dontateInputOne >=0  && isNaN(dontateInputOne) == false && dontateInputOne < mainBalance){
-
-    modal.showModal();
-
-        let newDonateAmount =    document.getElementById('donate_amount_1').innerText = dontateInputOne ;
-
-        let newMainBalance = mainBalance - newDonateAmount;
-   
-       let getMainBalance = document.getElementById('balance').innerText = newMainBalance;
-
-// * dynamic history card
-
-let cardOneHistoryDetails = idFunction('history__details');
+    
 
 
-
-let historyCardOne = document.createElement('div');
-historyCardOne.className = 'w-full border p-3 mb-4 rounded-md';
-
-historyCardOne.innerHTML = 
- `    
- <h4 class="my-3 font-semibold capitalize"> ${newDonateAmount} taka is donated for flood at noakhali, bangladesh </h4>
- <p> ${new Date().toLocaleDateString() }   </p>
- 
- `;
-
- cardOneHistoryDetails.insertBefore(historyCardOne, cardOneHistoryDetails.firstChild)
-
-   
-     }
-
-     else if( dontateInputOne > mainBalance){
+      if( dontateInputOne > mainBalance){
          alert("you don't have suffician balance ");
          return;
      }
 
+     else if(isNaN(dontateInputOne)){
+        alert('write a positive  number');
+        return;
+     }
+
+     
+    else if(dontateInputOne > 0  && dontateInputOne < mainBalance ){
+
+        modal.showModal();
+    
+            let newDonateAmount =    document.getElementById('donate_amount_1').innerText = dontateInputOne ;
+    
+            let newMainBalance = mainBalance - newDonateAmount;
+       
+           let getMainBalance = document.getElementById('balance').innerText = newMainBalance;
+    
+    // * dynamic history card
+    
+    let cardOneHistoryDetails = idFunction('history__details');
+    
+    
+    
+    let historyCardOne = document.createElement('div');
+    historyCardOne.className = 'w-full border p-3 mb-4 rounded-md';
+    
+    historyCardOne.innerHTML = 
+     `    
+     <h4 class="my-3 font-semibold capitalize"> ${newDonateAmount} taka is donated for flood at noakhali, bangladesh </h4>
+     <p> ${new Date().toLocaleDateString() }   </p>
+     
+     `;
+    
+     cardOneHistoryDetails.insertBefore(historyCardOne, cardOneHistoryDetails.firstChild)
+    
+       
+         }
+    
+
 
 
     else{
-         alert('write a positive number');
+         alert('write a  number');
          return;
     }
 
@@ -135,10 +138,6 @@ historyCardOne.innerHTML =
 let donateBtnSecond = idFunction('donate_btn_2');
 
 
- 
-
-
-
 
 
 donateBtnSecond.addEventListener('click', function(){
@@ -146,7 +145,7 @@ donateBtnSecond.addEventListener('click', function(){
     let dontateSecondInput = getInputValue('amount_2');
     let nowMainBalance = document.getElementById('balance').innerText;
 
-    if(dontateSecondInput >= 0  && isNaN(dontateSecondInput) == false &&  dontateSecondInput < mainBalance){
+    if(dontateSecondInput > 0  && isNaN(dontateSecondInput) == false &&  dontateSecondInput < mainBalance){
 
 
         modal.showModal();
@@ -215,7 +214,7 @@ donateBtnThird.addEventListener('click', function(){
  
     let donatethirdInput = getInputValue('amount_3');
 
-    if(donatethirdInput >= 0 && isNaN(donatethirdInput) == false && donatethirdInput < mainBalance){
+    if(donatethirdInput > 0 && isNaN(donatethirdInput) == false && donatethirdInput < mainBalance){
          
         modal.showModal();
  let newDonateAmount =    document.getElementById('donate_amount_3').innerText = donatethirdInput ;

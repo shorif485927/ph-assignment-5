@@ -11,8 +11,11 @@
 
 
     function getInputValue(id) {
-        let inputValue = parseFloat( document.getElementById(id).value);
-        return inputValue;
+        let input = document.getElementById(id).value;
+
+        let inputValue = parseFloat(input);
+    //    let inputValue  = inputNumber.toFixed(2);                                                
+       return inputValue ;
     }
 
 
