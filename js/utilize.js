@@ -13,8 +13,8 @@
     function getInputValue(id) {
         let input = document.getElementById(id).value;
 
-        let inputValue = parseFloat(input);
-    //    let inputValue  = inputNumber.toFixed(2);                                                
+        let inputNumber = parseFloat(input);
+        let inputValue  = inputNumber.toFixed(2);                                                
        return inputValue ;
     }
 
