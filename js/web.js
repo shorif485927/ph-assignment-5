@@ -14,7 +14,7 @@ let mainBalance = parseFloat(document.getElementById('balance').innerText);
 
 
 blogBtn.addEventListener('click', function(){
-     window.location.href = '/blog.html'
+     window.location.href = '/ph-assignment-5/blog.html'
 })
 
 
